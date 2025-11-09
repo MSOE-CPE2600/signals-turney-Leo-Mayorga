@@ -1,12 +1,14 @@
 /**
  * @file signal_handler.c
- * @brief Sets a signal handler for SIGINT, the handler prints a message and then quits
+ * @brief Sets a signal handler for SIGINT, the handler prints a message but does not quit
  */
 
 /**
- * Modified by:
+ * Modified by: Leo Mayorga
  * 
  * Brief summary of modifications:
+    - updated the handles signatre to void handle_signal(int)
+    - removed the exit() so that the program continues after SIGINT
  */
 
 
@@ -16,11 +18,11 @@
 #include <stdio.h>
 
 /**
- * @brief Signal handler for SIGINT - prints a message and exits
+ * @brief Signal handler for SIGINT - prints a message and continues
  */
-void handle_signal() {
-    printf("Received a signal\n");
-    exit(1);
+void handle_signal(int signo) {
+    (void)signo;
+    printf("Received a signal and continuing\n");
 }
 
 int main() {
