@@ -7,12 +7,20 @@
  * Modified by:
  * 
  * Brief summary of modifications:
+    - SIGSEGV handler that prints a message and returns
  */
 
-
+#include <signal.h>
 #include <stdio.h>
 
+void handle_segv(int signo)
+{
+    (void)signo;
+    printf("SIGSEGV was received (NULL)");
+}
+
 int main (int argc, char* argv[]) {
+    signal(SIGSEGV, handle_segv);
     // Declare a null pointer
     int* i = NULL;
 
