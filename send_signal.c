@@ -1,6 +1,7 @@
 /**
  * File: send_signal.c
  * Modified by: Leo Mayorga
+ * Course: CPE 2600 112
  * 
  * Brief summary of program:
     - generates a random int to send with SIGUSR1 through sigqueue to a receiver PID

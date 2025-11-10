@@ -5,6 +5,7 @@
 
 /**
  * Modified by: Leo Mayorga
+ * Course: CPE 2600 112
  * 
  * Brief summary of modifications:
     - updated the handles signatre to void handle_signal(int)

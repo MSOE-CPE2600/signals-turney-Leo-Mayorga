@@ -5,6 +5,7 @@
 
 /**
  * Modified by:
+ * Course: CPE 2600 112
  * 
  * Brief summary of modifications:
     - SIGSEGV handler that prints a message and returns

@@ -1,6 +1,7 @@
 /**
  * File: signal_alarm.c
  * Modified by: Leo Mayorga
+ * Course: CPE 2600 112
  * 
  * Brief summary of program:
     - reguster the SIGALRM handler

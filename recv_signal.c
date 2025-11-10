@@ -1,6 +1,7 @@
 /**
  * File: recv_signal.c
  * Modified by: Leo Mayorga
+ * Course: CPE 2600 112
  * 
  * Brief summary of program:
     - registers a SIGUSR1 handle using sigaction with SA_SIGINTO
@@ -27,7 +28,7 @@ int main()
 
     struct sigaction sa = {0};
     sa.sa_sigaction = handle_usr1;
-    sa.sa_flags = SA_SIGINFO;
+    sa.sa_flags = SA_SIGINFO;   // signal info
     sigemptyset(&sa.sa_mask);
 
     if (sigaction(SIGUSR1, &sa, NULL) == -1)
