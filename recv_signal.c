@@ -4,7 +4,7 @@
  * 
  * Brief summary of program:
     - registers a SIGUSR1 handle using sigaction with SA_SIGINTO
-    - prints the pid
+    - prints the sender's PID
 */
 
 #include <signal.h>
